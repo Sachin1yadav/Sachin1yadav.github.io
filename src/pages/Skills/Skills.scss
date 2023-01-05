@@ -1,0 +1,34 @@
+heading{
+    font-size: 36px;
+    margin: auto;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-weight: bold;
+//   font-family: Verdana, Geneva, Tahoma, sans-serif;
+ font-family: buntu, sans-serif;
+    text-align: center;
+    letter-spacing: normal;
+    line-height: 43.2px;
+   
+}
+.skillsDiv{
+    // border: 1px solid red;
+    padding: 2%;
+     
+}
+.skillsLogo{
+    // border: 1px solid green ;
+    // border: 1px dotted white;
+    padding-top: 10%;
+     
+    padding-bottom: 10%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;}
+.skillimg{
+    height: 80px;
+    margin: auto;
+}
+.skillsLogo:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    cursor: pointer;
+}

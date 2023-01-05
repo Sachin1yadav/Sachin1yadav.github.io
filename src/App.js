@@ -3,7 +3,8 @@
 
 import { About, Home } from './pages';
 import Navbar from './pages/Navbar/Navbar';
-import AllRouters from './Routes/Router';
+import Skills from './pages/Skills/Skills';
+// import AllRouters from './Routes/Router';
  
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Navbar/>
       <Home/>
       <About/>
+      <Skills/>
       {/* <AllRouters/> */}
     </div>
   );
