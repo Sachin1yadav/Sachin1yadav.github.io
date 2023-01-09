@@ -1,7 +1,7 @@
  
  
 
-import { About, Home } from './pages';
+import { About, Contect, Home } from './pages';
 import Navbar from './pages/Navbar/Navbar';
 import Skills from './pages/Skills/Skills';
 // import AllRouters from './Routes/Router';
@@ -13,6 +13,7 @@ function App() {
       <Home/>
       <About/>
       <Skills/>
+      <Contect/>
       {/* <AllRouters/> */}
     </div>
   );

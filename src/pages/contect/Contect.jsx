@@ -1,9 +1,73 @@
-import React from 'react'
-
+import React from "react";
+import "./Contect.scss";
+import { BsTelephone ,BsGithub,BsLinkedin} from "react-icons/bs";
+import { MdEmail } from "react-icons/md";
+import { Button, InputGroup,FormControl,FormLabel,Textarea, InputLeftElement, Input } from "@chakra-ui/react";
 const Contect = () => {
   return (
-    <div>Contect</div>
-  )
-}
+    <div className="maindiv">
+      <div className="imgdiv">
+        <img
+          src="https://web.bynaric.in/wp-content/uploads/2021/04/bulk-sms-06-600x546.png"
+          alt="contectGIF"
+        />
+      </div>
+      <div className="contectdiv">
+        <div className="socialMedia">
+        <Button
+            leftIcon={<BsLinkedin />}
+            colorScheme="linkedin"
+            variant="solid"
+            style={{ width:"100%"}}
+          >
+            Linkedin
+          </Button>
+          <Button
+            leftIcon={<BsGithub />}
+            colorScheme="gray"
+            variant="solid"
+            style={{ width:"100%"}}
+          >
+            Github
+          </Button>
+          <Button
+            leftIcon={<MdEmail />}
+            colorScheme="orange"
+            variant="solid"
+            style={{ width:"100%"}}
+          >
+            Email
+          </Button>
+        </div>
+        <div className="form">
+        
+        <Input variant='Name'height="36px" fontSize="18px" color="black" backgroundColor="gray.200" placeholder='Filled' />
+        <Input variant='Email'height="36px" fontSize="18px"  backgroundColor="gray.200" placeholder='Filled' />
+          <InputGroup>
+            <InputLeftElement
+             
+              children={<BsTelephone color="gray.300" />}
+            />
+              
+            <Input type="tel" fontSize="18px"  height="36px" backgroundColor="gray.200" variant='filled' placeholder="Mobile Number" />
+          </InputGroup>
+          <Textarea variant='filled' fontSize="18px" height="80px" backgroundColor="gray.200"  placeholder='Your Massage' />
+          <Button  fontSize="20px"
+            leftIcon={<MdEmail />}
+            height="40px"
+            padding="10px"
+            colorScheme="red"
+            variant="solid"
+            style={{ width:"100%"}}
+          >
+            Email
+          </Button>
+ 
+          
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default Contect
+export default Contect;
