@@ -23,7 +23,9 @@ const Projects = () => {
         <button ><BsGithub/><span>Code</span></button>
         <button><BsFillCameraVideoFill/><span>Video</span></button>
         </div>
-       <p className='details'>Skin Store is e-commerce website which offer Cosmetic Products.</p>
+       <p className='details'>       Skin Store is e-commerce website which offer Cosmetic Products.
+       Skin Store is e-commerce website which offer Cosmetic Products.
+       Skin Store is e-commerce website which offer Cosmetic Products.Skin Store is e-commerce website which offer Cosmetic Products.</p>
        <div className='techStack'>
        <p>HTML</p>
        <p>CSS,</p>
@@ -45,7 +47,9 @@ const Projects = () => {
         <button ><BsGithub/><span>Code</span></button>
         <button><BsFillCameraVideoFill/><span>Video</span></button>
         </div>
-       <p className='details'>Skin Store is e-commerce website which offer Cosmetic Products.</p>
+       <p className='details'>       Skin Store is e-commerce website which offer Cosmetic Products.
+       Skin Store is e-commerce website which offer Cosmetic Products.
+       Skin Store is e-commerce website which offer Cosmetic Products.Skin Store is e-commerce website which offer Cosmetic Products.</p>
        <div className='techStack'>
        <p>HTML</p>
        <p>CSS,</p>
@@ -65,7 +69,9 @@ const Projects = () => {
         <button ><BsGithub/><span>Code</span></button>
         <button><BsFillCameraVideoFill/><span>Video</span></button>
         </div>
-       <p className='details'>Skin Store is e-commerce website which offer Cosmetic Products.</p>
+       <p className='details'>       Skin Store is e-commerce website which offer Cosmetic Products.
+       Skin Store is e-commerce website which offer Cosmetic Products.
+       Skin Store is e-commerce website which offer Cosmetic Products.Skin Store is e-commerce website which offer Cosmetic Products.</p>
        <div className='techStack'>
        <p>HTML</p>
        <p>CSS,</p>
@@ -85,7 +91,9 @@ const Projects = () => {
         <button ><BsGithub/><span>Code</span></button>
         <button><BsFillCameraVideoFill/><span>Video</span></button>
         </div>
-       <p className='details'>Skin Store is e-commerce website which offer Cosmetic Products.</p>
+       <p className='details'>       Skin Store is e-commerce website which offer Cosmetic Products.
+       Skin Store is e-commerce website which offer Cosmetic Products.
+       Skin Store is e-commerce website which offer Cosmetic Products.Skin Store is e-commerce website which offer Cosmetic Products.</p>
        <div className='techStack'>
        <p>HTML</p>
        <p>CSS,</p>
@@ -105,7 +113,12 @@ const Projects = () => {
         <button ><BsGithub/><span>Code</span></button>
         <button><BsFillCameraVideoFill/><span>Video</span></button>
         </div>
-       <p className='details'>Skin Store is e-commerce website which offer Cosmetic Products.</p>
+       <p className='details'>
+       Skin Store is e-commerce website which offer Cosmetic Products.
+       Skin Store is e-commerce website which offer Cosmetic Products.
+       Skin Store is e-commerce website which offer Cosmetic Products.
+       Skin Store is e-commerce website which offer Cosmetic Products.
+       </p>
        <div className='techStack'>
        <p>HTML</p>
        <p>CSS,</p>
