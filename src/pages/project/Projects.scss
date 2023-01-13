@@ -1,0 +1,124 @@
+.prodiv{
+    // border: 1px solid red;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: auto;
+}
+@import "../../Global.scss";
+.heading{
+    @include mobile{
+        font-size: 22px;
+        // border: 1px solid red;
+        width: 100%;
+      }
+}
+.proItemdiv{
+    width: 90%;
+    height: 600px;
+    // border: 1px solid black;
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    flex-direction: column;
+}
+
+.proImg{
+    width: 100%;
+    border-radius: 10px;
+   
+    height: 400px;
+    @include mobile{
+        height: 300px;
+      }
+}
+
+.title{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.LinkDiv{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-around;
+    width: 100%;
+    @include mobile{
+        justify-content: space-between;
+        
+        
+      }
+}
+.LinkDiv button{
+    height: 40px;
+    display: flex;
+ gap: 10px;
+    padding: 10px;
+ 
+    font-size: 20px;
+    border-radius: 6px;
+    margin: auto;
+    color: white;
+   background-color: rgb(242, 33, 9);
+// background-color: rgb(238, 60, 60);
+   @include mobile{
+    padding: 8px;
+    font-size: 15px;
+    gap: 7px;
+    height: 35px;
+  }
+}
+.LinkDiv button span{
+    margin: auto;
+ margin-top: -5px;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ @include mobile{
+    margin-top: -3px;
+  }
+}
+.LinkDiv button:hover{
+    // color: gray;
+    background-color: rgb(207, 21, 0);
+ 
+}
+
+.details{
+    font-size: 20px;
+    text-align: center;
+    
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.techStack{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    padding: 5px 17px;
+    gap: 10px;
+    box-shadow: rgba(17, 17, 18, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(47, 49, 50, 0.35) 0px -2px 6px 0px inset;
+    // border: 1px solid red;
+    @include mobile{
+        padding: 5px 10px;
+        gap: 7px;
+      }
+}
+ .techStack p{
+    font-size: 19px;
+    @include mobile{
+        font-size: 13px;
+        
+      }
+ }
+ .tech{
+    color: red;
+    font-weight: bolder;
+    @include mobile{
+        font-size: 5px;
+         
+      }
+ }
