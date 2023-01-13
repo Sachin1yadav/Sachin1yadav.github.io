@@ -1,5 +1,5 @@
 .prodiv{
-    // border: 1px solid red;
+    border: 1px solid red;
     width: 90%;
     margin: auto;
     display: flex;
@@ -18,18 +18,22 @@
 .proItemdiv{
     width: 90%;
     height: 600px;
-    // border: 1px solid black;
+    border: 1px solid black;
     margin: auto;
     border-radius: 10px;
     display: flex;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     flex-direction: column;
+    @include mobile{
+        width: 95%;
+     
+      }
 }
 
 .proImg{
     width: 100%;
     border-radius: 10px;
-   
+   border: 1px solid red;
     height: 400px;
     @include mobile{
         height: 300px;
@@ -40,6 +44,7 @@
     font-size: 30px;
     text-align: center;
     font-weight: bolder;
+    border: 1px solid rgb(11, 10, 10);
 }
 
 .LinkDiv{
@@ -50,8 +55,8 @@
     width: 100%;
     @include mobile{
         justify-content: space-between;
-        
-        
+        margin-top: -20px;
+        border: 1px solid rgb(11, 10, 10);
       }
 }
 .LinkDiv button{
@@ -90,12 +95,13 @@
 .details{
     font-size: 20px;
     text-align: center;
-    
+    border: 1px solid rgb(11, 10, 10);
    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .techStack{
     display: flex;
+    border: 1px solid rgb(11, 10, 10);
     flex-direction: row-reverse;
     width: 100%;
     padding: 5px 17px;
