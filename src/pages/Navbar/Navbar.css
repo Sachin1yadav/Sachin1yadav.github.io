@@ -25,10 +25,11 @@ li {
 /* position: absolute; */
     /* height:10rem ; */
     /* border: 1px solid green; */
+    background-color: rgb(211, 251, 247);
     display: grid;
     grid-template-columns: 5rem 1fr   4fr 0.5fr 5rem;
     justify-content: space-between;
- position: fixed;    
+   position: fixed;
     box-sizing: border-box;
 }
 

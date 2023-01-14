@@ -1,18 +1,27 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./Contect.scss";
 import { BsTelephone ,BsGithub,BsLinkedin} from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
-import { Button, InputGroup,FormControl,FormLabel,Textarea, InputLeftElement, Input } from "@chakra-ui/react";
+import "aos/dist/aos.css";
+import AOS from "aos";
+import { Button, InputGroup ,Textarea, InputLeftElement, Input } from "@chakra-ui/react";
 const Contect = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="maindiv">
-      <div className="imgdiv">
+      <div className="imgdiv" data-aos="fade-up"
+           data-aos-anchor-placement="center-bottom"
+           data-aos-duration="600">
         <img
           src="https://web.bynaric.in/wp-content/uploads/2021/04/bulk-sms-06-600x546.png"
           alt="contectGIF"
         />
       </div>
-      <div className="contectdiv">
+      <div className="contectdiv" data-aos="fade-up"
+           data-aos-anchor-placement="center-bottom"
+           data-aos-duration="600">
         <div className="socialMedia">
         <Button
             leftIcon={<BsLinkedin />}

@@ -1,18 +1,10 @@
 import React from "react";
 import { useEffect } from "react";
- import "./Skills.scss"
+import "./Skills.scss";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import {
-  Grid,
-  Box,
-  GridItem,
-  
-  Image,
-  SimpleGrid,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Image, SimpleGrid, Text } from "@chakra-ui/react";
 
 const Skills = () => {
   useEffect(() => {
@@ -20,8 +12,10 @@ const Skills = () => {
   }, []);
   return (
     <div id="skills">
-      <p className="heading">My <span style={{color:"red"}}>Technical</span> Skills</p>
-       
+      <p className="heading">
+        My <span style={{ color: "red" }}>Technical</span> Skills
+      </p>
+
       <SimpleGrid
         minChildWidth="140px"
         w="90%"
@@ -46,7 +40,7 @@ const Skills = () => {
             src="https://cdn.cdnlogo.com/logos/h/84/html.svg"
             className="skillimg"
           />
-          <Text className="text" mt={5} fontSize="20px" fontWeight={1000}>
+          <Text className="text" mt={5} fontSize="18px" fontWeight={900}>
             HTML
           </Text>
         </Box>
@@ -66,7 +60,7 @@ const Skills = () => {
             src="https://static.cdnlogo.com/logos/c/18/css.svg"
             className="skillimg"
           />
-          <Text className="text" mt={5} fontWeight={600} fontSize="20px"> 
+          <Text className="text" mt={5} fontSize="18px" fontWeight={900}>
             CSS
           </Text>
         </Box>
@@ -86,7 +80,7 @@ const Skills = () => {
             src="https://static.cdnlogo.com/logos/j/44/javascript.svg"
             className="skillimg"
           />
-          <Text mt={5} fontWeight={600} fontSize="20px">
+          <Text className="text" mt={5} fontSize="18px" fontWeight={900}>
             JavaScript
           </Text>
         </Box>
@@ -106,7 +100,7 @@ const Skills = () => {
             src="https://static.cdnlogo.com/logos/r/63/react.svg"
             className="skillimg"
           />
-          <Text mt={5} fontWeight={600} fontSize="20px">
+          <Text className="text" mt={5} fontSize="18px" fontWeight={900}>
             React
           </Text>
         </Box>
@@ -126,7 +120,7 @@ const Skills = () => {
             src="https://static.cdnlogo.com/logos/r/37/redux.svg"
             className="skillimg"
           />
-          <Text mt={5} fontWeight={600} fontSize="20px">
+          <Text className="text" mt={5} fontSize="18px" fontWeight={900}>
             Redux
           </Text>
         </Box>
@@ -146,7 +140,7 @@ const Skills = () => {
             src="https://static.cdnlogo.com/logos/m/25/mongodb.svg"
             className="skillimg"
           />
-          <Text mt={5} fontWeight={600} fontSize="20px">
+          <Text className="text" mt={5} fontSize="18px" fontWeight={900}>
             MongoDB
           </Text>
         </Box>
@@ -167,7 +161,7 @@ const Skills = () => {
             className="skillimg"
           />
 
-          <Text mt={5} fontWeight={600} fontSize="20px">
+          <Text className="text" mt={5} fontSize="18px" fontWeight={900}>
             Express
           </Text>
         </Box>
@@ -187,7 +181,7 @@ const Skills = () => {
             src="https://static.cdnlogo.com/logos/n/79/node-js.svg"
             className="skillimg"
           />
-          <Text mt={5} fontWeight={600} fontSize="20px">
+          <Text className="text" mt={5} fontSize="18px" fontWeight={900}>
             Node JS
           </Text>
         </Box>
@@ -207,7 +201,7 @@ const Skills = () => {
             src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"
             className="skillimg"
           />
-          <Text mt={5} fontWeight={600} fontSize="20px">
+          <Text className="text" mt={5} fontSize="18px" fontWeight={900}>
             Git
           </Text>
         </Box>
@@ -228,7 +222,7 @@ const Skills = () => {
             className="skillimg"
           />
 
-          <Text mt={5} fontWeight={600} fontSize="20px">
+          <Text className="text" mt={5} fontSize="18px" fontWeight={900}>
             TypeScript
           </Text>
         </Box>
@@ -248,7 +242,7 @@ const Skills = () => {
             src="https://i0.wp.com/blog.knoldus.com/wp-content/uploads/2022/04/cypress.png?fit=364%2C364&ssl=1"
             className="skillimg"
           />
-          <Text mt={5} fontWeight={600} fontSize="20px">
+          <Text className="text" mt={5} fontSize="18px" fontWeight={900}>
             Cypress
           </Text>
         </Box>
@@ -267,7 +261,7 @@ const Skills = () => {
             src="https://avatars.githubusercontent.com/u/54212428?s=280&v=4"
             className="skillimg"
           />
-          <Text mt={5} fontWeight={600}fontSize="20px">
+          <Text className="text" mt={5} fontSize="18px" fontWeight={900}>
             Chakra UI
           </Text>
         </Box>
@@ -286,7 +280,7 @@ const Skills = () => {
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/512px-Bootstrap_logo.svg.png?202105010000024"
             className="skillimg"
           />
-          <Text mt={5} fontWeight={600}fontSize="20px">
+          <Text className="text" mt={5} fontSize="18px" fontWeight={900}>
             BootStrap
           </Text>
         </Box>
@@ -305,11 +299,10 @@ const Skills = () => {
             src="https://static-00.iconduck.com/assets.00/npm-icon-512x512-qtfdrf37.png"
             className="skillimg"
           />
-          <Text mt={5} fontWeight={600}fontSize="20px" >
+          <Text className="text" mt={5} fontSize="18px" fontWeight={900}>
             npm
           </Text>
         </Box>
-        
       </SimpleGrid>
       {/* <Image src={html5} /> */}
     </div>
