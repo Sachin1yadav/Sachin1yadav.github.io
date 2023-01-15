@@ -16,12 +16,15 @@ const Navbar = () => {
         setMode(!mode);
         toggleColorMode();
       };
+      console.log("mode",mode)
   return (
     <>
-  <nav className='main-nav'>
+  <nav className={mode?'main-nav':"dark-mode"}>
     <div className='logo'>
         <Link to="/">
-        <h2>S<span>achin</span></h2>
+        <h2  style={{ fontFamily: "'Brush Script MT', cursive"}}  >S<span  
+        style={{ fontFamily: "Copperplate, Papyrus, fantasy"}}
+        >achin</span></h2>
         </Link>
 
     </div>
@@ -66,15 +69,16 @@ const Navbar = () => {
         size="lg"
         // mr="2"
         borderRadius={7}
-        padding={8}
-        paddingLeft={5}
-        paddingRight={5}
+        marginTop={2}
+        padding={2}
+        paddingLeft={3}
+        paddingRight={3}
         onClick={() => {
           changeMode();
         }}
       >
-        {!mode && <RiSunLine  style={{fontSize:"25px"}} />}
-        {mode && <BsMoon style={{fontSize:"25px"}}/>}
+        {!mode && <RiSunLine  style={{fontSize:"20px"}} />}
+        {mode && <BsMoon style={{fontSize:"20px"}}/>}
       </Button>
             </li>
         </ul>

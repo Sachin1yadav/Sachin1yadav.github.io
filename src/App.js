@@ -10,6 +10,7 @@ import Skills from './pages/Skills/Skills';
 function App() {
   return (
     <div className="App">
+ 
       <Navbar/>
         <Home/>
       <About/>

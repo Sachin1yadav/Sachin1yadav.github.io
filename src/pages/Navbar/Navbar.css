@@ -25,12 +25,26 @@ li {
 /* position: absolute; */
     /* height:10rem ; */
     /* border: 1px solid green; */
-    background-color: rgb(211, 251, 247);
+    background-color: rgb(255, 255, 255);
     display: grid;
     grid-template-columns: 5rem 1fr   4fr 0.5fr 5rem;
     justify-content: space-between;
    position: fixed;
     box-sizing: border-box;
+    z-index: 1000;
+}
+.dark-mode{
+  width: 100%;
+/* position: absolute; */
+  /* height:10rem ; */
+  /* border: 1px solid green; */
+  background-color: rgb(26,32,44);
+  display: grid;
+  grid-template-columns: 5rem 1fr   4fr 0.5fr 5rem;
+  justify-content: space-between;
+ position: fixed;
+  box-sizing: border-box;
+  z-index: 1000;
 }
 
 .logo{
@@ -147,7 +161,10 @@ li {
       height: 8rem;
       grid-template-columns: 2rem 3fr 3fr 1fr 2rem;
     }
-  
+    .dark-mode{
+      height: 8rem;
+      grid-template-columns: 2rem 3fr 3fr 1fr 2rem;
+    }
     .menu-link{
         padding-left: 30%;
     }  
@@ -167,7 +184,10 @@ li {
       height: 7rem;
       grid-template-columns: 2rem 2fr 3fr 2rem 2rem;
     }
-  
+    .dark-mode{
+      height: 7rem;
+      grid-template-columns: 2rem 2fr 3fr 2rem 2rem;
+    }
     .menu-link {
       display: none;
     }
@@ -236,6 +256,14 @@ background: radial-gradient(circle, rgba(186,180,180,1) 17%, rgba(145,145,145,1)
       display: block;
       font-size: 2.5rem;
     }
+    .colorModeSwap{
+      /* border: 1px solid rgb(72, 30, 226); */
+     /* width: 45px; */
+margin-right: -10px;
+      margin-bottom: 25px;
+      
+  }
+  
   }
   
   @media (max-width: 798px) {
@@ -243,7 +271,10 @@ background: radial-gradient(circle, rgba(186,180,180,1) 17%, rgba(145,145,145,1)
       height: 6rem;
       grid-template-columns: 1rem 2fr 1fr 1fr 1rem;
     }
-    
+    .dark-mode{
+      height: 6rem;
+      grid-template-columns: 1rem 2fr 1fr 1fr 1rem;
+    }
     .logo,
     .social-media ul {
       height: 6rem;
@@ -260,6 +291,13 @@ background: radial-gradient(circle, rgba(186,180,180,1) 17%, rgba(145,145,145,1)
       display: block;
       font-size: 2.5rem;
     }
+    .colorModeSwap{
+      /* border: 1px solid rgb(72, 30, 226); */
+     /* width: 45px; */
+margin-right: -10px;
+      margin-bottom: 25px;
+      
+  }
   }
   
   @media (max-width: 520px) {
@@ -267,7 +305,10 @@ background: radial-gradient(circle, rgba(186,180,180,1) 17%, rgba(145,145,145,1)
       height: 6rem;
       grid-template-columns: 1rem 4fr 1fr 1fr 1rem;
     }
-  
+    .dark-mode{
+      height: 6rem;
+      grid-template-columns: 1rem 4fr 1fr 1fr 1rem;
+    }
     .logo,
     .social-media ul {
       height: 6rem;
@@ -286,13 +327,15 @@ background: radial-gradient(circle, rgba(186,180,180,1) 17%, rgba(145,145,145,1)
   
     .social-media .hamburger-menu {
       display: block;
-      font-size: 2.5rem;
+      font-size: 3rem;
     }
-  
-    /* .colorModeSwap{
-        border: 1px solid rgb(237, 27, 125);
-        height: 100px;
+   
+    .colorModeSwap{
+        /* border: 1px solid rgb(72, 30, 226); */
+       /* width: 45px; */
+  margin-right: -10px;
+        margin-bottom: 25px;
         
-    } */
+    }
   }
  
