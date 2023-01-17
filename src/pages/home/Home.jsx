@@ -19,7 +19,7 @@ const Home = () => {
     <div className="intro" id="intro">
     <div className="left">
       <div className="imgContainer">
-        <img src="./pic captuer.PNG" alt="profilePIc" />
+        <img src="./homePic.png" alt="profilePIc" />
       </div>
     </div>
     <div className="right">
@@ -30,24 +30,7 @@ const Home = () => {
           I'm a <span ref={textRef}></span>
         </h3>
         <Flex gap={"10px"} marginTop={10} wrap={"wrap"}>
-            <Link
-              _hover={{ textDecoration: "none" }}
-              href="https://drive.google.com/file/d/180DeCPDUcA8iz30nam0waEoJQE64FWQY/view"
-            >
-              <Button
-                bg={"rgb(1, 75, 97);"}
-                _hover={{ bg: "rgb(14, 129, 165)" }}
-                color="white"
-                variant={"solid"}
-                // width="120px"
-                h="35px"
-                borderRadius="3px"
-                marginBottom={"10px"}
-                fontSize="16px"
-              >
-                Download CV
-              </Button>
-            </Link>
+            
             <Link
               href="https://drive.google.com/file/d/180DeCPDUcA8iz30nam0waEoJQE64FWQY/view"
               target={"_blank"}
@@ -58,13 +41,13 @@ const Home = () => {
                 _hover={{ bg: "rgb(14, 129, 165)" }}
                 color="white"
                 variant={"solid"}
-                // width="120px"
+                width="120px"
                 h="35px"
                 borderRadius="3px"
                 marginBottom={"10px"}
-                fontSize="16px"
+                fontSize="19px"
               >
-                View CV
+               Resume 
               </Button>
             </Link>
           </Flex>

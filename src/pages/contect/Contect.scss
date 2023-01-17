@@ -51,13 +51,21 @@ margin: auto;
     width: 60%;
     margin: auto;
     gap: 10px;
+    text-decoration: none;
+    // border: 1px solid red;
     margin-top: 30px;
+    justify-content: start;
     @include mobile{
       
         align-items: center;
         width: 100%;
       }
     
+}
+.socialMedia div{
+  // border: 1px solid   green;
+  margin: auto;
+  justify-content: start;
 }
 .socialMedia button{
     margin-bottom: 15px;

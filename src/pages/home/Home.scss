@@ -27,22 +27,29 @@ display: flex;
       }
 
       img {
-        height: 80%;
-        border-radius: 10%;
+        height: 85%;
+        border-radius: 4%;
         margin: auto;
         justify-self: center;
         align-items: center;
-        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-        // margin: auto;
+       
         @include mobile{
           height: 70%;
-          box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-        }
+         }
       }
       
     }
   }
   
+  // .imgContainer img:hover{
+     
+  //   cursor: "pointer";
+  //   transform: " scale(1.4)";
+  //   transition: "all 0.5s ease-in-out";
+  // }
+
+
+
   .right {
     flex: 0.5;
     // position: relative;

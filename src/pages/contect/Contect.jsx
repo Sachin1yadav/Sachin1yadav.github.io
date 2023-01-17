@@ -1,10 +1,11 @@
 import React,{useEffect} from "react";
 import "./Contect.scss";
 import { BsTelephone ,BsGithub,BsLinkedin} from "react-icons/bs";
-import { MdEmail } from "react-icons/md";
+import { MdEmail  } from "react-icons/md";
+import {  FaUserAlt} from "react-icons/fa";
 import "aos/dist/aos.css";
 import AOS from "aos";
-import { Button, InputGroup ,Textarea, InputLeftElement, Input } from "@chakra-ui/react";
+import { Button, InputGroup ,Textarea, InputLeftElement, Input,Link } from "@chakra-ui/react";
 const Contect = () => {
   useEffect(() => {
     AOS.init();
@@ -23,7 +24,11 @@ const Contect = () => {
            data-aos-anchor-placement="center-bottom"
            data-aos-duration="600">
         <div className="socialMedia">
-        <Button
+          <div><Link
+          href="https://www.linkedin.com/in/sachin-yadav-a5512523a/"
+          target={"_blank"}
+        >
+        <Button className="btn"
             leftIcon={<BsLinkedin />}
             colorScheme="linkedin"
             variant="solid"
@@ -31,7 +36,9 @@ const Contect = () => {
           >
             Linkedin
           </Button>
-          <Button
+          </Link></div>
+          <div> <Link href="https://github.com/Sachin1yadav" target={"_blank"}>
+          <Button className="btn"
             leftIcon={<BsGithub />}
             colorScheme="gray"
             variant="solid"
@@ -39,7 +46,12 @@ const Contect = () => {
           >
             Github
           </Button>
-          <Button
+          </Link></div>
+          <div><Link
+          href="https://mail.google.com/mail/u/0/?fs=1&to=sy9084087@gmail.com&tf=cm"
+          target={"_blank"}
+        > 
+          <Button className="btn"
             leftIcon={<MdEmail />}
             colorScheme="orange"
             variant="solid"
@@ -47,20 +59,39 @@ const Contect = () => {
           >
             Email
           </Button>
+          </Link></div>
+        
+         
+          
         </div>
         <div className="form">
-        
-        <Input variant='Name'height="36px" fontSize="18px" color="black" backgroundColor="gray.200" placeholder='Filled' />
-        <Input variant='Email'height="36px" fontSize="18px"  backgroundColor="gray.200" placeholder='Filled' />
+        {/* <Input type="tel" fontSize="18px"  height="36px"   variant='filled' placeholder="Name" /> */}
+        {/* <Input type="tel" fontSize="18px"  height="36px"   variant='filled' placeholder="Email" /> */}
+        <InputGroup>
+            <InputLeftElement
+             
+              children={<FaUserAlt fontSize={18}  color="gray.18" />}
+            />
+              
+            <Input type="tel" fontSize="18px"  height="36px"   variant='filled' placeholder="Name" />
+          </InputGroup>
           <InputGroup>
             <InputLeftElement
              
-              children={<BsTelephone color="gray.300" />}
+              children={<MdEmail fontSize={18} color="gray.300" />}
             />
               
-            <Input type="tel" fontSize="18px"  height="36px" backgroundColor="gray.200" variant='filled' placeholder="Mobile Number" />
+            <Input type="tel" fontSize="18px"  height="36px"   variant='filled' placeholder="Email" />
           </InputGroup>
-          <Textarea variant='filled' fontSize="18px" height="80px" backgroundColor="gray.200"  placeholder='Your Massage' />
+           <InputGroup>
+            <InputLeftElement
+             
+              children={<BsTelephone fontSize={18} color="gray.300" />}
+            />
+              
+            <Input type="tel" fontSize="18px"  height="36px"   variant='filled' placeholder="Mobile Number" />
+          </InputGroup>
+          <Textarea variant='filled' fontSize="18px" height="80px"    placeholder='Your Massage' />
           <Button  fontSize="20px"
             leftIcon={<MdEmail />}
             height="40px"
