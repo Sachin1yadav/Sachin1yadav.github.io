@@ -15,12 +15,15 @@
   line-height: 43.2px;
 }
 .skillsDiv {
-//   border: 1px solid red;
+ 
   padding: 2%;
 }
 .skillsLogo {
   // border: 1px solid green ;
- 
+  background: rgba(221, 220, 220, 0.5);
+  /* background-color: white; */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  backdrop-filter: blur(15px);
   padding: 10%;
   
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;

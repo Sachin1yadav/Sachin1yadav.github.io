@@ -22,16 +22,16 @@ li {
 
 .main-nav{
     width: 100%;
-/* position: absolute; */
-    /* height:10rem ; */
-    /* border: 1px solid green; */
-    background-color: rgb(255, 255, 255);
+//  border: 1px solid red;
+    background: white;
+    // height: 70px;
+    position: fixed;
     display: grid;
     grid-template-columns: 5rem 1fr   4fr 0.5fr 5rem;
     justify-content: space-between;
-   position: fixed;
+
     box-sizing: border-box;
-    z-index: 1000;
+    z-index: 1300;
 }
 .dark-mode{
   width: 100%;
@@ -45,6 +45,9 @@ li {
  position: fixed;
   box-sizing: border-box;
   z-index: 1000;
+  .resumeBTN{
+    background-color: red;
+  }
 }
 
 .logo{
@@ -67,7 +70,7 @@ li {
   .menu-link ul {
     /* height: 10rem; */
     display: flex;
-    margin-top: 2rem;
+    margin-top: 1rem;
     
     justify-content: space-around;
     align-items: center;
@@ -202,24 +205,35 @@ li {
       position: relative;
       z-index: 99;
       padding: 25px 0px;
-      color: rgb(251, 0, 0);
+      color: black;
+      background: rgba(210, 201, 201, 0.5);
+  // background-color: white;  
+box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+backdrop-filter: blur(15px);
+      // background: "rgb(1, 75, 97)";
+      // background: radial-gradient(circle, rgba(186,180,180,1) 17%, rgba(145,145,145,1) 88%);
+            height: auto;
+            width: 80%;
+            display: grid;
+            grid-column: 2/5;
+            border: none;
+            align-items: center;
+            padding-left: 3rem;
+            transition: all 2s linear;
+            transform-origin: top;
       border-radius: 20px;
     }
-  
-    .mobile-menu-link {
-        background: rgb(186,180,180);
-background: radial-gradient(circle, rgba(186,180,180,1) 17%, rgba(145,145,145,1) 88%);
-      height: auto;
-      display: grid;
-      grid-column: 2/5;
-      border: none;
-      align-items: center;
-      padding-left: 3rem;
-      transition: all 2s linear;
-      transform-origin: top;
-      
+    .dark-mode{
+      .mobile-menu-link {
+        grid-column: 2/4;
+        position: relative;
+        z-index: 99;
+        padding: 25px 0px;
+        color: white;
+        border-radius: 20px;
+      }
     }
-  
+    
     .mobile-menu-link ul {
       height: 20rem;
       display: flex;

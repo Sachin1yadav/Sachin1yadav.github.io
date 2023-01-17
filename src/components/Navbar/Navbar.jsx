@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import "./Navbar.css";
+import "./Navbar.scss";
 import { Button, Text, Image } from "@chakra-ui/react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross1 } from "react-icons/rx";
@@ -57,7 +57,26 @@ const Navbar = () => {
         </li>
         </NavLink>
         <li>
-            Resume
+        <Link
+              href="https://drive.google.com/file/d/180DeCPDUcA8iz30nam0waEoJQE64FWQY/view"
+              target={"_blank"}
+              _hover={{ textDecoration: "none" }}
+            >
+               <Button  className='resumeBTN'
+                bg={"rgb(1, 75, 97);"}
+                _hover={{ bg: "rgb(14, 129, 165)" }}
+                color="white"
+                variant={"solid"}
+                // width="120px"
+                h="35px"
+                marginTop="8px"
+                borderRadius="3px"
+                marginBottom={"10px"}
+                fontSize="18px"
+              >  
+                Resume
+              </Button>
+            </Link>
         </li>
        </ul>
     </div>

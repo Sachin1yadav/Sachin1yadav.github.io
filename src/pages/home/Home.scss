@@ -21,20 +21,28 @@
       // border: 1px solid red;
  height: 80%;
  margin: 10%;
-
+display: flex;
       @include mobile{
         align-items: flex-start;
       }
 
       img {
-        height: 90%;
+        height: 80%;
+        border-radius: 10%;
+        margin: auto;
+        justify-self: center;
+        align-items: center;
+        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
         // margin: auto;
         @include mobile{
-          height: 90%;
+          height: 70%;
+          box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
         }
       }
+      
     }
   }
+  
   .right {
     flex: 0.5;
     // position: relative;
