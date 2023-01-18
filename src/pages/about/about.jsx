@@ -7,7 +7,7 @@ const About = () => {
     AOS.init();
   }, []);
   return (
-    <div className='aboutmaindiv'> 
+    <div className='aboutmaindiv' id="about"> 
       <p className="heading">All <span style={{color:"red"}}>About</span>  Me </p>
     <div className="aboutContent">
       <div data-aos="fade-up"

@@ -12,7 +12,7 @@ const Projects = () => {
     AOS.init();
   }, []);
   return (
-    <div className="prodiv">
+    <div className="prodiv" id="projects">
       <p className="heading">
         My <span style={{ color: "red" }}>Creative</span> Projects
       </p>

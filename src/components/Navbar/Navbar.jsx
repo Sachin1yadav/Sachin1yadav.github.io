@@ -1,13 +1,14 @@
 import React,{useState} from 'react'
 import "./Navbar.scss";
-import { Button, Text, Image } from "@chakra-ui/react";
+import { Button } from "@chakra-ui/react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxCross1 } from "react-icons/rx";
- import{Link,NavLink}from"react-router-dom"
+  
  import { RiSunLine } from "react-icons/ri";
  import { BsMoon } from "react-icons/bs";
 import { useColorMode, useColorModeValue } from "@chakra-ui/react";
  
+import { Link } from "react-scroll";
 const Navbar = () => {
     const [showMediaIcons, setShowMediaIcons] = useState(false);
     const { colorMode, toggleColorMode } = useColorMode();
@@ -21,7 +22,10 @@ const Navbar = () => {
     <>
   <nav className={mode?'main-nav':"dark-mode"}>
     <div className='logo'>
-        <Link to="/">
+        <Link  smooth={true}
+                duration={1000}
+                spy={true}
+                hashSpy={true} to="/">
         <h2  style={{ fontFamily: "'Brush Script MT', cursive"}}  >S<span  
         style={{ fontFamily: "Copperplate, Papyrus, fantasy"}}
         >achin</span></h2>
@@ -32,30 +36,46 @@ const Navbar = () => {
             showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"
           }>
        <ul>
-        <NavLink to="/" >
+        <Link  smooth={true}
+                duration={1000}
+                spy={true}
+                hashSpy={true} to="/" >
         <li>
             home
         </li>
-        </NavLink>
-        <NavLink to="/about" >
+        </Link>
+        <Link  smooth={true}
+                duration={1000}
+                spy={true}
+                hashSpy={true} to="about" >
         <li>
             About
         </li>
-        </NavLink>
+        </Link >
+        <Link smooth={true}
+                duration={1000}
+                spy={true}
+                hashSpy={true} to="skills">
         <li>
             Skills
         </li>
-
-        <NavLink to="/contect" >
+        </Link>
+        <Link smooth={true}
+                duration={1000}
+                spy={true}
+                hashSpy={true} to="projects">
+        <li>
+        Projects
+        </li>
+        </Link>
+        <Link  smooth={true}
+                duration={1000}
+                spy={true}
+                hashSpy={true} to="contect" >
         <li>
             Contect
         </li>
-        </NavLink>
-        <NavLink to="/projects" >
-        <li>
-            Projects
-        </li>
-        </NavLink>
+        </Link>
         <li>
         <Link
               href="https://drive.google.com/file/d/180DeCPDUcA8iz30nam0waEoJQE64FWQY/view"

@@ -16,7 +16,7 @@ const Home = () => {
   }, []);
   return (
      
-    <div className="intro" id="intro">
+    <div className="intro" id="/">
     <div className="left">
       <div className="imgContainer">
         <img src="./homePic.png" alt="profilePIc" />
