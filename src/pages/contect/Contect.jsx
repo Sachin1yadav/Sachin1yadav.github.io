@@ -146,7 +146,18 @@ const Contect = () => {
           >
             Email
           </Button>
+          <div className="phoneMail">
+            <div className="phoneNumber">
+              <p> <BsTelephone/></p>
+              <h3>+91 8887704287</h3>
+            </div>
+            <div className="mailaddress">
+              <p><MdEmail/></p>
+              <h3>sy9084087@gmail.com</h3>
+            </div>
+          </div>
           </form>
+          
         </div>
       
       </div>

@@ -11,7 +11,7 @@ const Home = () => {
       showCursor: true,
       backDelay: 2000,
       backSpeed:70,
-      strings: ["Full Stack Developer", "Designer","Problem Solver" ],
+      strings: ["Full Stack Developer","Problem Solver" ],
     });
   }, []);
   return (
@@ -34,6 +34,7 @@ const Home = () => {
             <Link
               href="https://drive.google.com/file/d/180DeCPDUcA8iz30nam0waEoJQE64FWQY/view"
               target={"_blank"}
+              download={"Sachin_Yadav_Resume.pdf"}
               _hover={{ textDecoration: "none" }}
             >
               <Button

@@ -20,14 +20,17 @@
       //  margin-left: 40px;
       // border: 1px solid red;
  height: 80%;
- margin: 10%;
+ cursor: pointer;
+ 
 display: flex;
       @include mobile{
         align-items: flex-start;
+        margin: 5%;
+        margin-top: 30px;
       }
 
       img {
-        height: 85%;
+        height: 90%;
         border-radius: 4%;
         margin: auto;
         justify-self: center;
@@ -38,7 +41,11 @@ display: flex;
           margin-top: 20px;
          }
       }
-      
+      img:hover{
+        cursor: pointer;
+        transform:  scale(1.2);
+        transition: all 0.8s ease-in-out;
+      }
     }
   }
   

@@ -239,11 +239,11 @@ const Skills = () => {
           className="skillsLogo"
         >
           <Image
-            src="https://i0.wp.com/blog.knoldus.com/wp-content/uploads/2022/04/cypress.png?fit=364%2C364&ssl=1"
+            src="https://www.pngfind.com/pngs/m/452-4521456_scss-logo-hd-png-download.png"
             className="skillimg"
           />
           <Text className="text" mt={5} fontSize="18px" fontWeight={900}>
-            Cypress
+            Sass
           </Text>
         </Box>
         <Box

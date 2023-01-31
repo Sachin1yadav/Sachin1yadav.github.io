@@ -36,15 +36,7 @@ const Projects = () => {
               <span>Code</span>
             </button>
           </Link>
-          <Link
-            target={" "}
-            href="https://drive.google.com/drive/folders/1pyK5s6AQrJVKf4F_269pxqa6_yM1go6O?usp=sharing"
-          >
-            <button>
-              <BsFillCameraVideoFill />
-              <span>Video</span>
-            </button>
-          </Link>
+           
         </div>
         <p className="details">
           {" "}
@@ -76,7 +68,7 @@ const Projects = () => {
         />
         <p className="title">Hindustan Times</p>
         <div className="LinkDiv">
-          <Link href="https://sachin-bt-mart.netlify.app/" target={" "}>
+          <Link href="https://majestic-muffin-49fd81.netlify.app/" target={" "}>
             <button>
               {" "}
               <FaLink /> <span>Deploy</span>{" "}
@@ -84,22 +76,14 @@ const Projects = () => {
           </Link>
           <Link
             target={" "}
-            href="https://github.com/Sachin1yadav/gorgeous-vest-5296/tree/main/my-app"
+            href="https://github.com/Sahil9214/Utkarshfw20_1149-intersting-fork-8458"
           >
             <button>
               <BsGithub />
               <span>Code</span>
             </button>
           </Link>
-          <Link
-            target={" "}
-            href="https://drive.google.com/drive/folders/1pyK5s6AQrJVKf4F_269pxqa6_yM1go6O?usp=sharing"
-          >
-            <button>
-              <BsFillCameraVideoFill />
-              <span>Video</span>
-            </button>
-          </Link>
+           
         </div>
         <p className="details">
           {" "}
@@ -137,15 +121,7 @@ const Projects = () => {
               <span>Code</span>
             </button>
           </Link>
-          <Link
-            target={" "}
-            href="https://drive.google.com/drive/folders/16N-zOdufIsTBysL4AAwePdqUfsm_7u3q?usp=sharing"
-          >
-            <button>
-              <BsFillCameraVideoFill />
-              <span>Video</span>
-            </button>
-          </Link>
+           
         </div>
         <p className="details">
           It's a clone of Urban Company. Urban company is a service provider
@@ -179,15 +155,7 @@ const Projects = () => {
               <span>Code</span>
             </button>
           </Link>
-          <Link
-            target={" "}
-            href="https://drive.google.com/drive/folders/1pyK5s6AQrJVKf4F_269pxqa6_yM1go6O?usp=sharing"
-          >
-            <button>
-              <BsFillCameraVideoFill />
-              <span>Video</span>
-            </button>
-          </Link>
+           
         </div>
         <p className="details">
           {" "}

@@ -27,7 +27,7 @@ const CommonContact = () => {
             _hover={{
               color: "rgb(234,67,53)",
               cursor: "pointer",
-              transform: " scale(1.4)",
+              transform: " scale(1.2)",
               transition: "all 0.5s ease-in-out",
             }}
             width={"70%"}
@@ -40,7 +40,7 @@ const CommonContact = () => {
             _hover={{
               color: "rgb(47,230,100)",
               cursor: "pointer",
-              transform: " scale(1.4)",
+              transform: " scale(1.2)",
               transition: "all 0.5s ease-in-out",
             }}
             width={"70%"}
@@ -53,7 +53,7 @@ const CommonContact = () => {
             _hover={{
               color: "grey",
               cursor: "pointer",
-              transform: " scale(1.4)",
+              transform: " scale(1.2)",
               transition: "all 0.5s ease-in-out",
             }}
             width={"70%"}
@@ -69,7 +69,7 @@ const CommonContact = () => {
             _hover={{
               color: "rgb(9,97,184)",
               cursor: "pointer",
-              transform: " scale(1.4)",
+              transform: " scale(1.2)",
               transition: "all 0.5s ease-in-out",
             }}
             width={"70%"}
