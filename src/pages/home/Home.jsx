@@ -37,6 +37,12 @@ const Home = () => {
               download={"Sachin_Yadav_Resume.pdf"}
               _hover={{ textDecoration: "none" }}
             >
+               {/* <Link
+              href="https://drive.google.com/file/d/180DeCPDUcA8iz30nam0waEoJQE64FWQY/view"
+              target={"_blank"}
+              download={"Sachin_Yadav_Resume.pdf"}
+              _hover={{ textDecoration: "none" }}
+            ></Link> */}
               <Button
                 bg={"rgb(1, 75, 97);"}
                 _hover={{ bg: "rgb(14, 129, 165)" }}
