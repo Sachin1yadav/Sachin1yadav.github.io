@@ -128,11 +128,16 @@ const Contect = () => {
               placeholder="Mobile Number"
             />
           </InputGroup>
-          <Textarea
+          {/* <Textarea */}
+          
+          
+          <Input
             variant="filled"
             fontSize="18px"
             height="80px"
             placeholder="Your Massage"
+            textAlign="center"
+            
           />
           <Button
             fontSize="20px"

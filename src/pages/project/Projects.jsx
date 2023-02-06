@@ -49,7 +49,7 @@ const Projects = () => {
         <div className="techStack">
           <p>BootStrap</p>
           <p>Chakra UI,</p>
-          <p>HTML</p>
+          <p>HTML,</p>
           <p>CSS,</p>
           <p>JS,</p>
           <p>REACT,</p>

@@ -78,13 +78,18 @@ const Navbar = () => {
         </Link>
         <li>
         <Link
-              href="https://drive.google.com/file/d/180DeCPDUcA8iz30nam0waEoJQE64FWQY/view"
-              target={"_blank"}
-              _hover={{ textDecoration: "none" }}
+            href="https://drive.google.com/uc?export=download&id=180DeCPDUcA8iz30nam0waEoJQE64FWQY"
+            download={"Sachin-Yadav-Resume.pdf"}
+            onClick={() =>
+              window.open(
+                "https://drive.google.com/file/d/180DeCPDUcA8iz30nam0waEoJQE64FWQY/view"
+              )
+            }
+            _hover={{ textDecoration: "none" }}
             >
                <Button  className='resumeBTN'
                 bg={"rgb(1, 75, 97);"}
-                _hover={{ bg: "rgb(14, 129, 165)" }}
+                _hover={{ bg: "rgb(14, 129, 165)",textDecoration: "none" }}
                 color="white"
                 variant={"solid"}
                 // width="120px"

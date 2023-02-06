@@ -106,29 +106,29 @@ margin: auto;
  }
  .phoneNumber{
   display: flex;
-  font-size: 20px;
+  font-size: 17px;
   padding: 5px;
-  gap: 10px;
+  gap: 6px;
   // border: 1px solid red;
  }
  .phoneNumber p, .mailaddress p{
-  margin-top: 6px;
+  margin-top: 3px;
  
  }
  .phoneNumber p:hover{
   cursor:  pointer ;
-  transform:   scale(1.4) ;
+  transform:   scale(1.2) ;
   transition:  all 0.5s ease-in-out ;
  }
  .mailaddress p:hover{
   cursor:  pointer ;
-  transform:   scale(1.4) ;
+  transform:   scale(1.2) ;
   transition:  all 0.5s ease-in-out ;
  }
  .mailaddress{
   display: flex;
-  font-size: 20px;
-  gap: 10px;
+  font-size: 17px;
+  gap: 6px;
     padding: 5px;
   // border: 1px solid red;
  }
