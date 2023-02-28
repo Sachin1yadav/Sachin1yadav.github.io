@@ -1,22 +1,66 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Contect.scss";
 import { BsTelephone, BsGithub, BsLinkedin } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { FaUserAlt } from "react-icons/fa";
 import "aos/dist/aos.css";
+import emailjs from "emailjs-com";
+
 import AOS from "aos";
 import {
   Button,
   InputGroup,
-  Textarea,
+   
   InputLeftElement,
   Input,
   Link,
+   
+  useToast,
+  useClipboard,
 } from "@chakra-ui/react";
 const Contect = () => {
+
+  // const { hasCopied, onCopy } = useClipboard("sy9084087@gmail.com");
+  const [loading, setIsLoading] = useState(false);
+  const toast = useToast();
+
   useEffect(() => {
     AOS.init();
   }, []);
+
+
+  const handleSendEmail = (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+    console.log(e.target);
+    emailjs
+      .sendForm(
+        "service_z9ksl15",
+        "template_dybbz45",
+        e.target,
+        "uAdPIu86-wLeKDVvI"
+      )
+      .then((res) => {
+        console.log(res);
+        toast({
+          title: "Email Sent Successfully",
+          status: "success",
+          duration: 5000,
+          isClosable: true,
+        });
+        setIsLoading(false);
+      })
+      .catch((err) => {
+        console.log(err);
+        setIsLoading(false);
+      });
+  };
+
+
+
+
+
+
   return (
     <div className="maindiv" id="contect">
       <div
@@ -85,11 +129,9 @@ const Contect = () => {
           </div>
         </div>
         <div >
-        <form className="form"  action="https://formsubmit.co/c8fb256fe036b0df292615b57217bffa"
-              method="POST">
-          {/* <Input type="tel" fontSize="18px"  height="36px"   variant='filled' placeholder="Name" /> */}
-          {/* <Input type="tel" fontSize="18px"  height="36px"   variant='filled' placeholder="Email" /> */}
-          <InputGroup>
+        <form className="form" onSubmit={handleSendEmail}   
+            >
+           <InputGroup>
             <InputLeftElement
               children={<FaUserAlt className="pIcon" fontSize={18} color="gray.18" />}
             />
@@ -100,6 +142,7 @@ const Contect = () => {
               height="36px"
               variant="filled"
               placeholder="Name"
+              name="name"
             />
           </InputGroup>
           <InputGroup>
@@ -113,6 +156,7 @@ const Contect = () => {
               height="36px"
               variant="filled"
               placeholder="Email"
+              name="email"
             />
           </InputGroup>
           <InputGroup>
@@ -126,6 +170,7 @@ const Contect = () => {
               height="36px"
               variant="filled"
               placeholder="Mobile Number"
+              name="number"
             />
           </InputGroup>
           {/* <Textarea */}
@@ -137,7 +182,7 @@ const Contect = () => {
             height="80px"
             placeholder="Your Massage"
             textAlign="center"
-            
+            name="message"
           />
           <Button
             fontSize="20px"
@@ -148,6 +193,9 @@ const Contect = () => {
             variant="solid"
             style={{ width: "100%" }}
             type="submit"
+            isLoading={loading}
+                         
+                        loadingText="Sending"
           >
             Email
           </Button>

@@ -17,7 +17,7 @@ const Navbar = () => {
         setMode(!mode);
         toggleColorMode();
       };
-      console.log("mode",mode)
+      // console.log("mode",mode)
   return (
     <>
   <nav className={mode?'main-nav':"dark-mode"}>
@@ -39,7 +39,8 @@ const Navbar = () => {
         <Link  smooth={true}
                 duration={1000}
                 spy={true}
-                hashSpy={true} to="/" >
+                hashSpy={true} to="/" 
+                onClick={()=>setShowMediaIcons(!showMediaIcons)}>
         <li>
             home
         </li>
@@ -47,7 +48,9 @@ const Navbar = () => {
         <Link  smooth={true}
                 duration={1000}
                 spy={true}
-                hashSpy={true} to="about" >
+                hashSpy={true} to="about"
+                onClick={()=>setShowMediaIcons(!showMediaIcons)}>
+                 
         <li>
             About
         </li>
@@ -55,7 +58,9 @@ const Navbar = () => {
         <Link smooth={true}
                 duration={1000}
                 spy={true}
-                hashSpy={true} to="skills">
+                hashSpy={true} to="skills"
+                onClick={()=>setShowMediaIcons(!showMediaIcons)}>
+                 
         <li>
             Skills
         </li>
@@ -63,7 +68,9 @@ const Navbar = () => {
         <Link smooth={true}
                 duration={1000}
                 spy={true}
-                hashSpy={true} to="projects">
+                hashSpy={true} to="projects"
+                onClick={()=>setShowMediaIcons(!showMediaIcons)}>
+                 
         <li>
         Projects
         </li>
@@ -71,37 +78,40 @@ const Navbar = () => {
         <Link  smooth={true}
                 duration={1000}
                 spy={true}
-                hashSpy={true} to="contect" >
+                hashSpy={true} to="contect"
+                onClick={()=>setShowMediaIcons(!showMediaIcons)}>
+
         <li>
             Contect
         </li>
         </Link>
         <li>
         <Link
-            href="https://drive.google.com/uc?export=download&id=180DeCPDUcA8iz30nam0waEoJQE64FWQY"
-            download={"Sachin-Yadav-Resume.pdf"}
-            onClick={() =>
-              window.open(
-                "https://drive.google.com/file/d/180DeCPDUcA8iz30nam0waEoJQE64FWQY/view"
-              )
-            }
-            _hover={{ textDecoration: "none" }}
+           
+           _hover={{ textDecoration: "none",color:"red" }}
             >
                <Button  className='resumeBTN'
+                  href="https://drive.google.com/uc?export=download&id=180DeCPDUcA8iz30nam0waEoJQE64FWQY"
+                  download={"fw20_0965-Sachin-Yadav-Resume.pdf"}
+                  onClick={() =>
+                    window.open(
+                      "https://drive.google.com/file/d/180DeCPDUcA8iz30nam0waEoJQE64FWQY/view"
+                    )
+                  }
                 bg={"rgb(1, 75, 97);"}
                 _hover={{ bg: "rgb(14, 129, 165)",textDecoration: "none" }}
                 color="white"
                 variant={"solid"}
-                // width="120px"
-                h="35px"
+                 h="35px"
                 marginTop="8px"
                 borderRadius="3px"
                 marginBottom={"10px"}
                 fontSize="18px"
               >  
-                Resume
+                 Resume
               </Button>
             </Link>
+  
         </li>
        </ul>
     </div>

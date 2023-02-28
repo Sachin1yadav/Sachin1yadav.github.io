@@ -32,9 +32,8 @@ const Home = () => {
         <Flex gap={"10px"} marginTop={10} wrap={"wrap"}>
             
             <Link
-              // href="https://drive.google.com/file/d/180DeCPDUcA8iz30nam0waEoJQE64FWQY/view"
-              href="https://drive.google.com/uc?export=download&id=180DeCPDUcA8iz30nam0waEoJQE64FWQY"
-              download={"Sachin-Yadav-Resume.pdf"}
+               href="https://drive.google.com/uc?export=download&id=180DeCPDUcA8iz30nam0waEoJQE64FWQY"
+              download={"fw20_0965-Sachin-Yadav-Resume.pdf"}
               onClick={() =>
                 window.open(
                   "https://drive.google.com/file/d/180DeCPDUcA8iz30nam0waEoJQE64FWQY/view"
@@ -48,14 +47,14 @@ const Home = () => {
                 _hover={{ bg: "rgb(14, 129, 165)" }}
                 color="white"
                 variant={"solid"}
-                width="120px"
+                width="180px"
                 h="35px"
                 borderRadius="3px"
                 marginBottom={"10px"}
                 fontSize="19px"
                
               >
-               Resume 
+              Download Resume 
               </Button>
             </Link>
           </Flex>

@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { FaLink } from "react-icons/fa";
 import { BsGithub } from "react-icons/bs";
 import { BsFillCameraVideoFill } from "react-icons/bs";
+import Carousel from "react-bootstrap/Carousel";
 import { Link } from "@chakra-ui/react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -104,6 +105,13 @@ const Projects = () => {
 
       <div className="proItemdiv" data-aos="flip-up" data-aos-duration="1000">
         <img className="proImg" src="./urbanPost.PNG" alt="urbancompany" />
+        {/* <Carousel fade={true} slide={false} pause={false}>
+        <Carousel.Item interval={2000}>
+        <img className="proImg" src="./urbanPost.PNG" alt="urbancompany" />
+        <img className="proImg" src="../trans2.PNG" alt="urbancompany" />
+        <img className="proImg" src="./urbanPost.PNG" alt="urbancompany" />
+            </Carousel.Item>
+                </Carousel> */}
         <p className="title">Urban Company</p>
         <div className="LinkDiv">
           <Link href="https://urbanbysachin.netlify.app" target={" "}>

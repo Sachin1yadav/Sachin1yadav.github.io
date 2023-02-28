@@ -11,7 +11,8 @@ const Skills = () => {
     AOS.init();
   }, []);
   return (
-    <div id="skills">
+    <div>
+       <div id="skills">
       <p className="heading">
         My <span style={{ color: "red" }}>Technical</span> Skills
       </p>
@@ -198,11 +199,11 @@ const Skills = () => {
           className="skillsLogo"
         >
           <Image
-            src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"
+            src="https://cdn.cdnlogo.com/logos/n/80/next-js.svg"
             className="skillimg"
           />
           <Text className="text" mt={5} fontSize="18px" fontWeight={900}>
-            Git
+            Next JS
           </Text>
         </Box>
         <Box
@@ -239,7 +240,7 @@ const Skills = () => {
           className="skillsLogo"
         >
           <Image
-            src="https://www.pngfind.com/pngs/m/452-4521456_scss-logo-hd-png-download.png"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1280px-Sass_Logo_Color.svg.png"
             className="skillimg"
           />
           <Text className="text" mt={5} fontSize="18px" fontWeight={900}>
@@ -284,7 +285,24 @@ const Skills = () => {
             BootStrap
           </Text>
         </Box>
-        <Box
+       
+      </SimpleGrid>
+      {/* <Image src={html5} /> */}
+    </div>
+    <div id="skills">
+      <p className="heading">
+        Tools <span style={{ color: "red" }}>, That I </span> use
+      </p>
+
+      <SimpleGrid
+        minChildWidth="140px"
+        w="90%"
+        m="auto"
+        gap={10}
+        mb="50"
+        className="skillsDiv"
+      >
+         <Box
           data-aos="zoom-in"
           data-aos-duration="1000"
           w="100%"
@@ -303,9 +321,136 @@ const Skills = () => {
             npm
           </Text>
         </Box>
+        <Box
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          w="100%"
+          m="auto"
+          rounded="md"
+          alignItems="center"
+          justifyContent="center"
+          textAlign="center"
+          className="skillsLogo"
+        >
+          <Image
+            src="https://res.cloudinary.com/postman/image/upload/t_team_logo/v1629869194/team/2893aede23f01bfcbd2319326bc96a6ed0524eba759745ed6d73405a3a8b67a8"
+            className="skillimg"
+          />
+          <Text className="text" mt={5} fontSize="18px" fontWeight={900}>
+            POST MAN
+          </Text>
+        </Box>
+        <Box
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          w="100%"
+          m="auto"
+          rounded="md"
+          alignItems="center"
+          justifyContent="center"
+          textAlign="center"
+          className="skillsLogo"
+        >
+          <Image
+            src="https://w7.pngwing.com/pngs/905/947/png-transparent-microsoft-visual-studio-code-alt-macos-bigsur-icon-thumbnail.png"
+            className="skillimg"
+          />
+          <Text className="text" mt={5} fontSize="18px" fontWeight={900}>
+            VS Code
+          </Text>
+        </Box>
+        <Box
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          w="100%"
+          m="auto"
+          rounded="md"
+          alignItems="center"
+          justifyContent="center"
+          textAlign="center"
+          className="skillsLogo"
+        >
+          <Image
+            src="https://camo.githubusercontent.com/add2c9721e333f0043ac938f3dadbc26a282776e01b95b308fcaba5afaf74ae3/68747470733a2f2f6173736574732e76657263656c2e636f6d2f696d6167652f75706c6f61642f76313538383830353835382f7265706f7369746f726965732f76657263656c2f6c6f676f2e706e67"
+            className="skillimg"
+          />
+          <Text className="text" mt={5} fontSize="18px" fontWeight={900}>
+            Vercel
+          </Text>
+        </Box>
+        <Box
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          w="100%"
+          m="auto"
+          rounded="md"
+          alignItems="center"
+          justifyContent="center"
+          textAlign="center"
+          className="skillsLogo"
+        >
+          <Image
+            src="https://cdn.worldvectorlogo.com/logos/netlify.svg"
+            className="skillimg"
+          />
+          <Text className="text" mt={5} fontSize="18px" fontWeight={900}>
+           Netlify
+          </Text>
+        </Box>
+         
+        
+         
+      
+         
+        <Box
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          colSpan={1}
+          w="100%"
+          m="auto"
+          rounded="md"
+          alignItems="center"
+          justifyContent="center"
+          textAlign="center"
+          className="skillsLogo"
+        >
+          <Image
+            src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png"
+            className="skillimg"
+          />
+          <Text className="text" mt={5} fontSize="18px" fontWeight={900}>
+            Git
+          </Text>
+        </Box>
+        
+         
+        <Box
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          colSpan={1}
+          w="100%"
+          m="auto"
+          rounded="md"
+          alignItems="center"
+          justifyContent="center"
+          textAlign="center"
+          className="skillsLogo"
+        >
+          <Image
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/JSON_vector_logo.svg/1200px-JSON_vector_logo.svg.png"
+            className="skillimg"
+          />
+          <Text className="text" mt={5} fontSize="18px" fontWeight={900}>
+            JSON
+          </Text>
+        </Box>
+         
+         
       </SimpleGrid>
       {/* <Image src={html5} /> */}
     </div>
+    </div>
+   
   );
 };
 

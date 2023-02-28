@@ -29,6 +29,7 @@ const CommonContact = () => {
               cursor: "pointer",
               transform: " scale(1.2)",
               transition: "all 0.5s ease-in-out",
+              
             }}
             width={"70%"}
             height="70%"
