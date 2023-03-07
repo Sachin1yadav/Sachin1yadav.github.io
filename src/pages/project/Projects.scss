@@ -112,15 +112,18 @@
 .techStack{
     display: flex;
     // border: 1px solid rgb(11, 10, 10);
-    flex-direction: row-reverse;
+    flex-direction: row ;
     width: 100%;
     padding: 5px 17px;
     gap: 10px;
+    flex-wrap: wrap;
+
     box-shadow: rgba(17, 17, 18, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(47, 49, 50, 0.35) 0px -2px 6px 0px inset;
     // border: 1px solid red;
     @include mobile{
         padding: 5px 10px;
         gap: 7px;
+        flex-wrap: wrap;
       }
 }
  .techStack p{

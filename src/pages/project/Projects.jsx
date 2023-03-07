@@ -17,7 +17,44 @@ const Projects = () => {
       <p className="heading">
         My <span style={{ color: "red" }}>Creative</span> Projects
       </p>
+      <div className="proItemdiv" data-aos="flip-up" data-aos-duration="1000">
+        <img className="proImg" src="./Vshop.PNG" alt="virtual_Shop" />
 
+        <p className="title">Virtual Shop</p>
+        <div className="LinkDiv">
+          <Link href="https://minishop-nine.vercel.app/" target={" "}>
+            <button>
+              {" "}
+              <FaLink /> <span>Deploy</span>{" "}
+            </button>
+          </Link>
+          <Link
+            target={" "}
+            href="https://github.com/Sachin1yadav/Virtual-Shop"
+          >
+            <button>
+              <BsGithub />
+              <span>Code</span>
+            </button>
+          </Link>
+        </div>
+        <p className="details">
+          Virtual Shop is a e-commerce website.you can perform every operation
+          here like Add to cart,wish-list,buy and all that things. and we have
+          admin panel also there we can access each and every user details and
+          those order ,cart and wish list . it's a Group project of 5 memmber
+          team. .
+        </p>
+        <div className="techStack">
+          <p className="tech">Tech Stack :</p>
+          <p>REACT,</p>
+          <p>Redux,</p>
+          <p>Firebase,</p>
+          <p>sass,</p>
+          <p>Bootstrap,</p>
+          <p>Chakra UI</p>
+        </div>
+      </div>
       <div className="proItemdiv" data-aos="flip-up" data-aos-duration="1000">
         <img className="proImg" src="./btmatPOSTER.PNG" alt="BTMART" />
         <p className="title">BT Mart</p>
@@ -37,7 +74,6 @@ const Projects = () => {
               <span>Code</span>
             </button>
           </Link>
-           
         </div>
         <p className="details">
           {" "}
@@ -48,14 +84,13 @@ const Projects = () => {
           thing it an only front-end project .
         </p>
         <div className="techStack">
-          <p>BootStrap</p>
-          <p>Chakra UI,</p>
-          <p>HTML,</p>
-          <p>CSS,</p>
-          <p>JS,</p>
-          <p>REACT,</p>
-
           <p className="tech">Tech Stack :</p>
+          <p>REACT,</p>
+          <p>JS,</p>
+          <p>CSS,</p> 
+          <p>HTML,</p>
+          <p>BootStrap,</p>
+          <p>Chakra UI</p>
         </div>
       </div>
 
@@ -84,7 +119,6 @@ const Projects = () => {
               <span>Code</span>
             </button>
           </Link>
-           
         </div>
         <p className="details">
           {" "}
@@ -95,23 +129,16 @@ const Projects = () => {
           please have a look at this project.
         </p>
         <div className="techStack">
+          <p className="tech">Tech Stack :</p>
+          <p>JS,</p>
           <p>HTML</p>
           <p>CSS,</p>
-          <p>JS,</p>
-
-          <p className="tech">Tech Stack :</p>
         </div>
       </div>
 
-      <div className="proItemdiv" data-aos="flip-up" data-aos-duration="1000">
+      {/* <div className="proItemdiv" data-aos="flip-up" data-aos-duration="1000">
         <img className="proImg" src="./urbanPost.PNG" alt="urbancompany" />
-        {/* <Carousel fade={true} slide={false} pause={false}>
-        <Carousel.Item interval={2000}>
-        <img className="proImg" src="./urbanPost.PNG" alt="urbancompany" />
-        <img className="proImg" src="../trans2.PNG" alt="urbancompany" />
-        <img className="proImg" src="./urbanPost.PNG" alt="urbancompany" />
-            </Carousel.Item>
-                </Carousel> */}
+        
         <p className="title">Urban Company</p>
         <div className="LinkDiv">
           <Link href="https://urbanbysachin.netlify.app" target={" "}>
@@ -145,7 +172,7 @@ const Projects = () => {
 
           <p className="tech">Tech Stack :</p>
         </div>
-      </div>
+      </div> */}
 
       <div className="proItemdiv" data-aos="flip-up" data-aos-duration="1000">
         <img className="proImg" src="./trans2.PNG" alt="translater" />
@@ -163,23 +190,21 @@ const Projects = () => {
               <span>Code</span>
             </button>
           </Link>
-           
         </div>
         <p className="details">
           {" "}
-          It's a Languages Translator according to Country & Language.
-It's a mini-project completed in 1 day. with the help of React JSX and Rest API.
-One more thing you can also audio play your Text in Both languages.
+          It's a Languages Translator according to Country & Language. It's a
+          mini-project completed in 1 day. with the help of React JSX and Rest
+          API. One more thing you can also audio play your Text in Both
+          languages.
         </p>
         <div className="techStack">
-        <p>Rest API</p>
+          <p className="tech">Tech Stack :</p>
+          <p>REACT,</p>
+          <p>Rest API,</p>
           <p>HTML,</p>
           <p>CSS,</p>
-          <p>JS,</p>
-          <p>REACT,</p>
-
-
-          <p className="tech">Tech Stack :</p>
+          <p>JS</p>
         </div>
       </div>
 
