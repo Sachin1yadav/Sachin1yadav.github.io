@@ -35,10 +35,10 @@ const Contect = () => {
     console.log(e.target);
     emailjs
       .sendForm(
-        "service_z9ksl15",
-        "template_dybbz45",
+        "service_4ybbdur",
+        "template_8xi1o2b",
         e.target,
-        "uAdPIu86-wLeKDVvI"
+        "9X_2EV9JJ0MqkXhxB"
       )
       .then((res) => {
         console.log(res);
