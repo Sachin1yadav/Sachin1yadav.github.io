@@ -55,6 +55,41 @@ const Projects = () => {
           <p>Chakra UI</p>
         </div>
       </div>
+
+      <div className="proItemdiv" data-aos="flip-up" data-aos-duration="1000">
+        <img className="proImg" src="./notesPIC.PNG" alt="translater" />
+        <p className="title">Notes App</p>
+        <div className="LinkDiv">
+          <Link href="https://notes-eight-theta.vercel.app/" target={" "}>
+            <button>
+              {" "}
+              <FaLink /> <span>Deploy</span>{" "}
+            </button>
+          </Link>
+          <Link target={" "} href="https://github.com/Sachin1yadav/NotesApp">
+            <button>
+              <BsGithub />
+              <span>Code</span>
+            </button>
+          </Link>
+        </div>
+        <p className="details">
+          {" "}
+          This Project is Full Stack Project(MERN). In this Notes App you can
+          make your notes will a title and description, you can also see the
+          date and time when you made that note and you can also Delete or
+          update them.
+        </p>
+        <div className="techStack">
+          <p className="tech">Tech Stack :</p>
+          <p>REACT,</p>
+          <p>Node js,</p>
+          <p>Express,</p>
+          <p>MongoDB,</p>
+          <p>Chakra UI</p>
+        </div>
+      </div>
+
       <div className="proItemdiv" data-aos="flip-up" data-aos-duration="1000">
         <img className="proImg" src="./btmatPOSTER.PNG" alt="BTMART" />
         <p className="title">BT Mart</p>
@@ -87,7 +122,7 @@ const Projects = () => {
           <p className="tech">Tech Stack :</p>
           <p>REACT,</p>
           <p>JS,</p>
-          <p>CSS,</p> 
+          <p>CSS,</p>
           <p>HTML,</p>
           <p>BootStrap,</p>
           <p>Chakra UI</p>
@@ -136,9 +171,9 @@ const Projects = () => {
         </div>
       </div>
 
-      {/* <div className="proItemdiv" data-aos="flip-up" data-aos-duration="1000">
+      <div className="proItemdiv" data-aos="flip-up" data-aos-duration="1000">
         <img className="proImg" src="./urbanPost.PNG" alt="urbancompany" />
-        
+
         <p className="title">Urban Company</p>
         <div className="LinkDiv">
           <Link href="https://urbanbysachin.netlify.app" target={" "}>
@@ -156,7 +191,6 @@ const Projects = () => {
               <span>Code</span>
             </button>
           </Link>
-           
         </div>
         <p className="details">
           It's a clone of Urban Company. Urban company is a service provider
@@ -172,7 +206,7 @@ const Projects = () => {
 
           <p className="tech">Tech Stack :</p>
         </div>
-      </div> */}
+      </div>
 
       <div className="proItemdiv" data-aos="flip-up" data-aos-duration="1000">
         <img className="proImg" src="./trans2.PNG" alt="translater" />
