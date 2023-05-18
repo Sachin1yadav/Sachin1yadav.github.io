@@ -186,7 +186,7 @@ const Skills = () => {
             Node JS
           </Text>
         </Box>
-        <Box
+        {/* <Box
           data-aos="zoom-in"
           data-aos-duration="1000"
           colSpan={1}
@@ -205,8 +205,8 @@ const Skills = () => {
           <Text className="text" mt={5} fontSize="18px" fontWeight={900}>
             Next JS
           </Text>
-        </Box>
-        <Box
+        </Box> */}
+        {/* <Box
           data-aos="zoom-in"
           data-aos-duration="1000"
           colSpan={1}
@@ -226,7 +226,7 @@ const Skills = () => {
           <Text className="text" mt={5} fontSize="18px" fontWeight={900}>
             TypeScript
           </Text>
-        </Box>
+        </Box> */}
         <Box
           data-aos="zoom-in"
           data-aos-duration="1000"
