@@ -171,12 +171,13 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className="proItemdiv" data-aos="flip-up" data-aos-duration="1000">
-        <img className="proImg" src="./urbanPost.PNG" alt="urbancompany" />
 
-        <p className="title">Urban Company</p>
+      <div className="proItemdiv" data-aos="flip-up" data-aos-duration="1000">
+        <img className="proImg" src="./PIANOimg.PNG" alt="urbancompany" />
+
+        <p className="title">PIANO</p>
         <div className="LinkDiv">
-          <Link href="https://urbanbysachin.netlify.app" target={" "}>
+          <Link href="https://sachin-piano-github-sachin1yadav.netlify.app/" target={" "}>
             <button>
               {" "}
               <FaLink /> <span>Deploy</span>{" "}
@@ -184,7 +185,7 @@ const Projects = () => {
           </Link>
           <Link
             target={" "}
-            href="https://github.com/Sachin1yadav/thin-thumb-2475"
+            href="https://github.com/Sachin1yadav/Piano"
           >
             <button>
               <BsGithub />
@@ -193,20 +194,23 @@ const Projects = () => {
           </Link>
         </div>
         <p className="details">
-          It's a clone of Urban Company. Urban company is a service provider
-          company at your doorstep. It's an individual project within 5 days
-          with the help of React JSX. It's only a front-end project. Please have
-          a look at it. i hope you will like it .
+        It's a basic PIANO.
+with the help of HTML, CSS, and JS.
+you can play any tune here on key clicking.
         </p>
         <div className="techStack">
+        <p className="tech">Tech Stack :</p>
           <p>HTML</p>
           <p>CSS,</p>
-          <p>JS,</p>
-          <p>REACT,</p>
+          <p>JS</p>
+          
 
-          <p className="tech">Tech Stack :</p>
+          
         </div>
       </div>
+
+
+      
 
       <div className="proItemdiv" data-aos="flip-up" data-aos-duration="1000">
         <img className="proImg" src="./trans2.PNG" alt="translater" />
