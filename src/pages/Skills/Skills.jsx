@@ -285,7 +285,26 @@ const Skills = () => {
             BootStrap
           </Text>
         </Box>
-       
+        <Box
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          colSpan={1}
+          w="100%"
+          m="auto"
+          rounded="md"
+          alignItems="center"
+          justifyContent="center"
+          textAlign="center"
+          className="skillsLogo"
+        >
+          <Image
+ src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/600px-Tailwind_CSS_Logo.svg.png?20211001194333"
+ className="skillimg"
+          />
+          <Text className="text" mt={5} fontSize="18px" fontWeight={900}>
+            Tailwind 
+          </Text>
+        </Box>
       </SimpleGrid>
       {/* <Image src={html5} /> */}
     </div>
