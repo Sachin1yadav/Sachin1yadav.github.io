@@ -3,11 +3,10 @@
 @import "../../Global.scss";
 
 .aboutmaindiv{
-    width: 100%;
+    width: 90%;
     height: auto;
     margin-bottom: 20px;
-    // border: 1px solid red;
-    
+margin:auto    
 }
 .heading{
     font-size: 36px;
@@ -35,7 +34,7 @@
 }
 .aboutGif   {
     // border: 1px solid green;
-    width: 30%;
+    width: 45%;
     gap: 10px;
     margin: auto;
     height: 90%;
@@ -53,7 +52,7 @@
 }
 .aboutInfo{
     // border: 1px solid rgb(128, 49, 0);
-    width: 60%;
+    width: 50%;
     gap: 10px;
     margin: auto;
     height: 90%;

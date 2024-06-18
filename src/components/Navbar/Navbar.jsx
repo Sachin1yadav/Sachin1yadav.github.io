@@ -121,7 +121,7 @@ const Navbar = () => {
         </div>
         <div className="social-media">
           <ul>
-            <li>
+            {/* <li>
               <Button
                 className="colorModeSwap"
                 size="lg"
@@ -138,7 +138,7 @@ const Navbar = () => {
                 {!mode && <RiSunLine style={{ fontSize: "20px" }} />}
                 {mode && <BsMoon style={{ fontSize: "20px" }} />}
               </Button>
-            </li>
+            </li> */}
           </ul>
           <div className="hamburger-menu">
             <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>

@@ -1,3 +1,5 @@
+import "./App.scss"
+
 import CommonContact from "./components/CommanContect";
  
 import GithubStatus from "./pages/github/github";
@@ -8,7 +10,6 @@ import Home from "./pages/home/Home";
 import About from "./pages/about/about";
 import Contect from "./pages/contect/Contect";
  
-
 function App() {
   return (
     <div className="App">

@@ -310,7 +310,7 @@ const Skills = () => {
     </div>
     <div id="skills">
       <p className="heading">
-        Tools <span style={{ color: "red" }}>, That I </span> use
+        Tools 
       </p>
 
       <SimpleGrid

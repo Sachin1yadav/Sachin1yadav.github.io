@@ -171,40 +171,7 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className="proItemdiv" data-aos="flip-up" data-aos-duration="1000">
-        <img className="proImg" src="./PIANOimg.PNG" alt="urbancompany" />
-
-        <p className="title">PIANO</p>
-        <div className="LinkDiv">
-          <Link
-            href="https://sachin-piano-github-sachin1yadav.netlify.app/"
-            target={" "}
-          >
-            <button>
-              {" "}
-              <FaLink /> <span>Deploy</span>{" "}
-            </button>
-          </Link>
-          <Link target={" "} href="https://github.com/Sachin1yadav/Piano">
-            <button>
-              <BsGithub />
-              <span>Code</span>
-            </button>
-          </Link>
-        </div>
-        <p className="details">
-          It's a basic PIANO. with the help of HTML, CSS, and JS. you can play
-          any tune here on key clicking.
-        </p>
-        <div className="techStack">
-          <p className="tech">Tech Stack :</p>
-          <p>HTML</p>
-          <p>CSS,</p>
-          <p>JS</p>
-        </div>
-      </div>
-
-      <div className="proItemdiv" data-aos="flip-up" data-aos-duration="1000">
+      {/* <div className="proItemdiv" data-aos="flip-up" data-aos-duration="1000">
         <img className="proImg" src="./trans2.PNG" alt="translater" />
         <p className="title">Audio Language Translator </p>
         <div className="LinkDiv">
@@ -236,7 +203,7 @@ const Projects = () => {
           <p>CSS,</p>
           <p>JS</p>
         </div>
-      </div>
+      </div> */}
 
       {/* ............... */}
     </div>
